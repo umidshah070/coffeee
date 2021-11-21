@@ -304,6 +304,48 @@ body {
     padding-bottom: 80px;
 }
 
+.line {
+    width: 700px;
+    height: 3px;
+    border: 2px solid #FDD6BA;
+}
+
+.line::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    background-color: #35332e;
+    position: absolute;
+    top: 54px;
+    left: 0;
+}
+
+.line::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    background-color: #8a8781;
+    position: absolute;
+    top: 54px;
+    left: 350px;
+}
+
+.after::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    background-color: #3c3a34;
+    position: absolute;
+    top: 54px;
+    left: 700px;
+}
+
 .how_it_work__content {
     display: flex;
     justify-content: space-between;
